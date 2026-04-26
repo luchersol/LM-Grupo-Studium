@@ -1,6 +1,4 @@
-// =============================
-// CREACIÓN DE NODOS
-// =============================
+// #region CREACIÓN DE NODOS
 
 function agregarElemento() {
     const nuevoLi = document.createElement("li");
@@ -10,9 +8,8 @@ function agregarElemento() {
     lista.appendChild(nuevoLi);
 }
 
-// =============================
-// ELIMINACIÓN DE NODOS
-// =============================
+// #endregion
+// #region ELIMINACIÓN DE NODOS
 
 function eliminarElemento() {
     const lista = document.getElementById("lista");
@@ -22,9 +19,8 @@ function eliminarElemento() {
     }
 }
 
-// =============================
-// OBJETOS DEL NAVEGADOR
-// =============================
+// #endregion
+// #region OBJETOS DEL NAVEGADOR
 
 function mostrarAlert() {
     alert("Esto es un alert");
@@ -56,9 +52,9 @@ function infoPantalla() {
     alert("Ancho: " + screen.width + " Alto: " + screen.height);
 }
 
-// =============================
-// SETTIMEOUT
-// =============================
+
+// #endregion
+// #region SETTIMEOUT
 
 function cambiarFondo() {
     document.body.style.backgroundColor = "lightblue";
@@ -67,3 +63,5 @@ function cambiarFondo() {
 function cambiarFondoConRetraso() {
     setTimeout(cambiarFondo, 2000);
 }
+
+// #endregion
