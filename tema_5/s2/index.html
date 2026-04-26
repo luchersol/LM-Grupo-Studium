@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo DOM - Sesión 2</title>
+
+    <style>
+        .resaltado {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="titulo">Título original</h1>
+
+    <hr>
+
+    <h2>Lista dinámica</h2>
+
+    <button onclick="agregarElemento()">Añadir elemento</button>
+    <button onclick="eliminarElemento()">Eliminar elemento</button>
+
+    <ul id="lista">
+        <li>Elemento 1</li>
+    </ul>
+
+    <hr>
+
+    <h2>Objetos del navegador</h2>
+
+    <button onclick="mostrarAlert()">Alert</button>
+    <button onclick="mostrarConfirm()">Confirm</button>
+    <button onclick="mostrarPrompt()">Prompt</button>
+    <button onclick="abrirVentana()">Abrir ventana</button>
+    <button onclick="verLocation()">Ver URL</button>
+    <button onclick="irAtras()">History back</button>
+    <button onclick="infoPantalla()">Info pantalla</button>
+
+    <hr>
+
+    <h2>setTimeout</h2>
+    <button onclick="cambiarFondoConRetraso()">Cambiar fondo en 2s</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
