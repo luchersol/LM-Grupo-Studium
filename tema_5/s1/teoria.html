@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM - Sesión 1</title>
+
+    <style>
+        .resaltado {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="titulo" data-version="1.0">Título original</h1>
+
+    <hr>
+
+    <h2>Obtención y modificación de elementos</h2>
+
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+    <br><br>
+    <ul id="lista">
+        <li>Texto 1</li>
+        <li>Texto 2</li>
+        <li>Texto 3</li>
+    </ul>
+    <button onclick="cambiarTextoListado()">Cambiar texto lista</button>
+    <br><br>
+    <button onclick="cambiarClase()">Cambiar clase (color fondo amarillo)</button>
+    <br><br>
+    <button onclick="cambiarEstilo()">Cambiar estilo (color texto azul y fuente de letra)</button>
+
+    <hr>
+
+    <h2>Obtención y modificación de atributos</h2>
+
+    <button onclick="obtenerVersion()">Obtener versión</button>
+    
+    <br><br>
+    
+    <input id="input-version" type="text" placeholder="Nueva versión">
+    <button id="btn-modificar-version" onclick="actualizacionVersion()">
+        Actualizar versión
+    </button>
+
+    <p id="resultadoAtributo"></p>
+
+    <hr>
+
+    <h2>Añadir eventos por el DOM</h2>
+
+    <button id="alerta">ALERTA</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

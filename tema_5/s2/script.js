@@ -22,19 +22,6 @@ function eliminarElemento() {
 // #endregion
 // #region OBJETOS DEL NAVEGADOR
 
-function mostrarAlert() {
-    alert("Esto es un alert");
-}
-
-function mostrarConfirm() {
-    const resultado = confirm("¿Te gusta JavaScript?");
-    console.log("Respuesta:", resultado);
-}
-
-function mostrarPrompt() {
-    const texto = prompt("Escribe algo:");
-    console.log("Has escrito:", texto);
-}
 
 function abrirVentana() {
     window.open("https://example.com");
