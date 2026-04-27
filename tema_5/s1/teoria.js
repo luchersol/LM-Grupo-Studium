@@ -2,13 +2,16 @@
 
 function cambiarTexto() {
     const titulo = document.getElementById("titulo"); 
+    // const titulo = document.querySelector("#titulo");
+
     titulo.textContent = "Texto título cambiado dinámicamente";
 }
 
 function cambiarTextoListado() {
     const lista = document.getElementById("lista"); 
     const elementos = lista.getElementsByTagName("li");
-    console.log(lista.childNodes);
+    // const elementos = document.querySelectorAll("#lista li");
+
     for (const elemento of elementos) {
         elemento.textContent = "Texto elemento cambiado"
     }
@@ -29,7 +32,7 @@ function cambiarClase() {
 function cambiarEstilo() {
     const titulo = document.getElementById("titulo"); 
     titulo.style.color = "blue";
-    titulo.style.fontFamily = "Courier New";
+    titulo.style.fontFamily = "Courier New"; // font-family
 } 
 
 // #endregion 
