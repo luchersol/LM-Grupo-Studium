@@ -69,33 +69,3 @@ btnAlerta.addEventListener("click", (e) => {
 
 // #endregion
 
-// #region Ejercicios
-
-let cont = 0;
-
-function ej1() {
-    const contador = document.getElementById("contador-ej1");
-    cont++;
-    contador.textContent = "Contador: " + cont;
-}
-
-function ej2() {
-    const input = document.getElementById("input-ej2");
-    alert("Texto introducido: " + input.value);
-}
-
-function ej3() {
-    const parrafo = document.getElementById("parrafo-ej3");
-    alert()
-}
-
-function ej4() {
-    
-}
-
-function ej5(boton) {
-    const color = boton.getAttribute("data-color");
-    alert("Color: " + color);
-}
-
-// #endregion

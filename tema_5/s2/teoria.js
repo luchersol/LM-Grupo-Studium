@@ -9,6 +9,7 @@ function agregarElemento() {
 }
 
 // #endregion
+
 // #region ELIMINACIÓN DE NODOS
 
 function eliminarElemento() {
@@ -20,11 +21,13 @@ function eliminarElemento() {
 }
 
 // #endregion
+
 // #region OBJETOS DEL NAVEGADOR
 
 
 function abrirVentana() {
-    window.open("https://example.com");
+    window.open("https://www.google.com");
+    // open("https://www.google.com");
 }
 
 function verLocation() {
@@ -41,6 +44,7 @@ function infoPantalla() {
 
 
 // #endregion
+
 // #region SETTIMEOUT
 
 function cambiarFondo() {
