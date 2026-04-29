@@ -13,15 +13,15 @@ function editarTexto() {
     const texto = document.getElementById("texto-editable");
 
     // OPCIÓN 1: REEMPLAZAR TODO EL CONTENIDO
-    texto.textContent = "Hola ";
+    texto.textContent = "Texto cambiado";
     
     // OPCIÓN 2: AÑADIR SIN REEMPLAZAR
-    texto.append(document.createElement("div"));
+        // texto.append(document.createElement("div"));
     // texto.textContent += " + añadido con textContent";
 
     // OPCIÓN 3: UTILIZAR LOS NODOS
     texto.append(" + añadido con append"); 
-    // texto.append(document.createTextNode("+ añadido con append"))
+    // texto.append(document.createTextNode(" + añadido con append"))
 }
 
 // #endregion
