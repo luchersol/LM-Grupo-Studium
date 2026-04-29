@@ -1,4 +1,4 @@
-// #region EJERCICIO
+// #region EJERCICIO 1
 
 //   <input type="text" id="inputTexto" placeholder="Escribe algo">
 //   <button id="btnAgregar">Añadir</button>

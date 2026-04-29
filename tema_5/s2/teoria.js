@@ -31,14 +31,16 @@ function eliminarElemento() {
     const lista = document.getElementById("lista");
 
     if (lista.children.length > 0) {
-        lista.removeChild(lista.lastElementChild);
+        lista.lastElementChild.remove();
+        // lista.removeChild(lista.lastElementChild);
     }
 }
 
 function eliminarTexto() {
     const texto = document.getElementById("texto-borrable");
 
-    texto.parentNode.removeChild(texto);
+    texto.remove();
+    // texto.parentNode.removeChild(texto);
 }
 
 // #endregion
