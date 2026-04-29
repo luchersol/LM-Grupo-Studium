@@ -16,12 +16,21 @@ function editarTexto() {
     texto.textContent = "Texto cambiado";
     
     // OPCIÓN 2: AÑADIR SIN REEMPLAZAR
-        // texto.append(document.createElement("div"));
+    // texto.append(document.createElement("div"));
     // texto.textContent += " + añadido con textContent";
 
     // OPCIÓN 3: UTILIZAR LOS NODOS
     texto.append(" + añadido con append"); 
-    // texto.append(document.createTextNode(" + añadido con append"))
+    // texto.append(document.createTextNode(" + añadido con append"));
+
+    // texto.append(document.createElement("div"), " + añadido con append");
+}
+
+function moverElemento() {
+    const elementoTexto = document.getElementById("texto-editable");
+    const nuevaPosicion = document.getElementById("nueva-posicion");
+
+    nuevaPosicion.append(elementoTexto);
 }
 
 // #endregion
