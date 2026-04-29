@@ -37,3 +37,61 @@
     });
 
 // #endregion
+
+// #region EJERCICIO 2
+
+// <input type="text" id="inputAlerta" placeholder="Escribe un mensaje">
+// <button id="btnAlerta">Mostrar alerta</button>
+
+const inputAlerta = document.getElementById("inputAlerta");
+const btnAlerta = document.getElementById("btnAlerta");
+
+btnAlerta.addEventListener("click", () => {
+  const mensaje = inputAlerta.value.trim();
+
+  if (mensaje === "") return;
+
+  setTimeout(() => alert(mensaje), 3000);
+});
+
+// #endregion
+
+// #region EJERCICIO 3
+
+// <input type="text" id="inputUrl" placeholder="https://...">
+// <button id="btnIr">Ir a URL</button>
+
+const inputUrl = document.getElementById("inputUrl");
+const btnIr = document.getElementById("btnIr");
+
+btnIr.addEventListener("click", function () {
+  let url = inputUrl.value.trim();
+
+  if (url === "") return;
+
+  // Si el usuario no escribe protocolo, lo añadimos
+  if (!url.startsWith("http://") && !url.startsWith("https://")) {
+    url = "https://" + url;
+  }
+
+  // Abrir en nueva pestaña
+  window.open(url);
+});
+
+// #endregion
+
+// #region EJERCICIO 4
+
+// <p id="mensaje">Bienvenido.</p>
+
+const mensaje = document.getElementById("mensaje");
+
+// Crear enlace
+const enlace = document.createElement("a");
+enlace.textContent = "Google";
+enlace.href = "https://www.google.com";
+
+// Añadir texto
+mensaje.append("¿Quiere ir a ", enlace, "?")
+
+// #endregion

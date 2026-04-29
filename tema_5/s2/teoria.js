@@ -2,6 +2,7 @@
 
 function agregarElemento() {
     const nuevoLi = document.createElement("li");
+    nuevoLi.textContent = "Nuevo Elemento";
 
     const lista = document.getElementById("lista");
     lista.appendChild(nuevoLi);
@@ -29,18 +30,12 @@ function editarTexto() {
 
 function eliminarElemento() {
     const lista = document.getElementById("lista");
+    const elementosHijos = lista.children;
 
-    if (lista.children.length > 0) {
-        lista.lastElementChild.remove();
-        // lista.removeChild(lista.lastElementChild);
+    if (elementosHijos.length > 0) {
+        lista.removeChild(lista.lastElementChild);
+        // lista.lastElementChild.remove();
     }
-}
-
-function eliminarTexto() {
-    const texto = document.getElementById("texto-borrable");
-
-    texto.remove();
-    // texto.parentNode.removeChild(texto);
 }
 
 // #endregion
@@ -62,9 +57,14 @@ function irAtras() {
     // history.go(-1);
 }
 
-function idAdelante() {
+function irAdelante() {
     history.forward();
     // history.go(1);
+}
+
+function irOtraPagina() {
+    location.assign("extra.html");
+    // location.href = "extra.html";
 }
 
 function recargarPagina() {
